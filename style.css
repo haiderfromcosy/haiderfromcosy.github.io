@@ -1,0 +1,55 @@
+body {
+    background-color: lightblue;
+    font-family: 'Encode Sans SC', sans-serif;
+    transition: 0.5s ease-in-out;  }
+
+body.red {
+    background-color: red;
+}
+
+body.green {
+    background-color: green;
+}
+
+  
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+
+  .links {
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+.malcomintheMiddle {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .haiderHeader { 
+      text-align: center;
+      font-size: 30px;
+      font-family: 'Encode Sans SC', sans-serif;
+  }
+
+  .haiderHeader h1:hover{
+      color:darkcyan;
+      
+  }
+
+.links img {
+    margin-right: 16px;
+    transition: 0.2s ease-in-out;
+}
+
+.links img:hover {
+    transform: translateY(-10px);
+
+}
