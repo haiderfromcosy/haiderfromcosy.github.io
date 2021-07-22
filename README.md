@@ -1,1 +1,0 @@
-# haiderfromcosy.github.io
