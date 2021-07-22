@@ -37,6 +37,7 @@ body.green {
       text-align: center;
       font-size: 30px;
       font-family: 'Encode Sans SC', sans-serif;
+      display: flex;
   }
 
   .haiderHeader h1:hover{
