@@ -1,19 +1,29 @@
 let cosyLogo = document.querySelector('#cosy-logo');
 let cosyFMLogo = document.querySelector('#cosy-fm-logo');
 let haiderHaider = document.querySelector('#haiderHeader');
+let changingWord = document.querySelector('#changing-word')
 
 document.querySelectorAll('.links a').forEach( function(element){
     element.addEventListener('mouseover', function(){
         
         if ( element.id == "cosy-link" ) {
-            alert('I just hovered over COSY')
+            changingWord.innerText = 'COSY';
+            document.body.classList.add('red');
+
         } else if ( element.id == "youtube-link" ) {
-            alert('YouTube Link')
+            changingWord.innerText = 'COSY FM';
+            document.body.classList.add('green');
+
         } else if ( element.id == "instagram-link" ) {
-            alert('Instagram Link')
+            changingWord.innerText = 'IG';
         } else if ( element.id == 'spotify-link' ){
-            alert('Spotify link')
+            changingWord.innerText = 'Spotify';
         }
 
+    }) 
+    element.addEventListener('mouseout', function(){
+        changingWord.innerText = '';
+        document.body.classList.remove('red')
+        document.body.classList.remove('green')
     })
 } )
